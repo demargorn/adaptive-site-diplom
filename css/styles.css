@@ -30,7 +30,6 @@ body {
     position: relative;
     width: 100%;
     min-width: 768px;
-    /* max-width: 1660px; */
 }
 
 .header::before {
@@ -107,6 +106,53 @@ body {
 }
 
 .page {
+    width: 100%;
+    max-width: 1920px;
+    min-width: 768px;
+}
+
+.trends{
+    margin-top: 60px;
+}
+
+.title-text {
+    display: block;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 27px;
+}
+
+.title-text::after {
+    content: '';
+    display: flex;
+    width: 65px;
+    height: 3px;
+    position: absolute;
+    left: 48.5%;
+    background-color: #b59f5b;
+}
+
+.trend {
+    display: flex;
+}
+
+.trend-item {
+    background-image: url('/img/trend1.jpg');
+    background-size: cover;
+    width: calc(25% - 5px);
+    height: 340px;
+    margin-right: 5px;
+}
+
+.trend-item:last-child {
+    margin-right: 100px;
+}
+
+.posts-content {
     display: flex;
     justify-content: center;
 }
@@ -208,19 +254,18 @@ body {
     padding-right: 15px;
 }
 
-.title-text {
+.aside-title-text {
     display: block;
     text-align: center;
     position: relative;
     font-size: 14px;
     line-height: 40px;
     font-weight: 700;
-    color: black;
     text-transform: uppercase;
     padding-bottom: 27px;
 }
 
-.title-text::after {
+.aside-title-text::after {
     content: '';
     display: flex;
     width: 65px;

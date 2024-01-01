@@ -141,24 +141,74 @@ body {
 }
 
 .trend-item {
-    background-image: url('/img/trend1.jpg');
     background-size: cover;
+    position: relative;
     width: calc(25% - 5px);
-    height: 340px;
+    height: 320px;
     margin-right: 5px;
 }
 
+.trend-item::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
 .trend-item:last-child {
-    margin-right: 100px;
+    margin-right: 0px;
+}
+
+.item_1 {
+    background-image: url('/img/trend1.jpg');
+}
+
+.item_2 {
+    background-image: url('/img/trend2.jpg');
+}
+
+.item_3 {
+    background-image: url('/img/trend3.jpg');
+}
+
+.item_4 {
+    background-image: url('/img/trend4.jpg');
+}
+
+.trend-item-text {
+    position: relative;
+    width: 80%;
+    border: 2px solid #b59f5b;
+    padding: 30px 15px;
+    margin: 130px auto 15px auto;
+    z-index: 2;
+}
+
+.trend-title a {
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.trend-title a:hover {
+    color: #b59f5b;
 }
 
 .posts-content {
     display: flex;
     justify-content: center;
-}
-
-.main-content {
-    margin-top: 60px;
+    margin-top: 65px;
 }
 
 .post {
@@ -249,7 +299,7 @@ body {
 
 .right-bar {
     width: 270px;
-    margin-top: 50px;
+    margin-top: -8px;
     margin-left: 120px;
     padding-right: 15px;
 }

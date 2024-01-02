@@ -29,6 +29,7 @@ body {
     background-position: top center;
     position: relative;
     width: 100%;
+    max-width: 1920px;
     min-width: 768px;
 }
 
@@ -107,8 +108,10 @@ body {
 
 .page {
     width: 100%;
-    max-width: 1920px;
+    max-width: 1170px;
     min-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .trends{
@@ -226,7 +229,7 @@ body {
 
 .post img {
     display: block;
-    min-width: 381px;
+    max-width: 381px;
     min-height: 294px;
     padding-left: 15px;
     padding-right: 30px;
@@ -260,7 +263,6 @@ body {
 .post-category a:hover {
     text-decoration: underline;
 }
-
 
 .post-title a {
     display: block;
@@ -534,13 +536,98 @@ body {
     font-weight: 700;
 }
 
+.shop {  
+    padding-bottom: 70px;
+}
+
+.shop-items {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1170px;
+}
+
+.shop-item {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-right: 10px;
+    position: relative;
+}
+
+.shop-item:last-child {
+    padding-right: 0;
+}
+
+.shop-item-text {
+    border: 2px solid #b59f5b;
+    padding: 50px 15px;
+    position: relative;
+    top: -30px;
+    z-index: 1;
+}
+
+.shop-item img {
+    display: block;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.shop-item-text_title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.shop-item-text p a {
+    text-decoration: none;
+    color:#b59f5b;
+}
+
+.shop-item-text_title p {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.shop-item-text p a:hover {
+    text-decoration: underline;
+}
+
+.shop-item-text_price-old-price {
+    display: block;
+    text-decoration: line-through;
+    font-size: 14px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.shop-item-text_price-new-price {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.in-shop {
+    padding: 15px;
+    margin-left: 150px;
+    cursor: pointer;
+    background-color:#b59f5b;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
 .footer-container {
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
     list-style-type: none;
-    width: 1170px;
+    width: 100%;
+    max-width: 1170px;
     height: 86px;
     background-color: #f4f7f6;
     margin-bottom: 73px;

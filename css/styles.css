@@ -26,10 +26,9 @@ body {
     background-image: url('/img/banner-bg.jpg');
     background-color: #888888;
     background-size: cover;
-    background-position: top center;
+    background-position: center center;
     position: relative;
     width: 100%;
-    max-width: 1920px;
     min-width: 768px;
 }
 
@@ -108,14 +107,9 @@ body {
 
 .page {
     width: 100%;
-    max-width: 1170px;
-    min-width: 768px;
+    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.trends{
-    margin-top: 60px;
 }
 
 .title-text {
@@ -146,7 +140,7 @@ body {
 .trend-item {
     background-size: cover;
     position: relative;
-    width: calc(25% - 5px);
+    width: 25%;
     height: 320px;
     margin-right: 5px;
 }
@@ -545,13 +539,13 @@ body {
     justify-content: center;
     width: 100%;
     max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .shop-item {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    padding-right: 10px;
+    width: 33%;
+    padding-right: 75px;
     position: relative;
 }
 
@@ -563,16 +557,15 @@ body {
     border: 2px solid #b59f5b;
     padding: 50px 15px;
     position: relative;
+    box-sizing: border-box;
     top: -30px;
-    z-index: 1;
 }
 
 .shop-item img {
     display: block;
-    max-width: 300px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
 .shop-item-text_title {
@@ -596,27 +589,37 @@ body {
     text-decoration: underline;
 }
 
-.shop-item-text_price-old-price {
-    display: block;
-    text-decoration: line-through;
-    font-size: 14px;
-    font-weight: 700;
+.shop-item-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 20px;
 }
 
-.shop-item-text_price-new-price {
+.shop-item-footer_prices {
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-item-footer_prices-old-price {
+    text-decoration: line-through;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.shop-item-footer_prices-new-price {
     font-size: 20px;
     font-weight: 700;
 }
 
 .in-shop {
     padding: 15px;
-    margin-left: 150px;
     cursor: pointer;
     background-color:#b59f5b;
     border: none;
     color: white;
     text-transform: uppercase;
+    font-size: 14px;
     font-weight: 700;
 }
 

@@ -91,6 +91,10 @@ html {
     text-decoration: underline;
 }
 
+.burger-menu {
+    display: none;
+}
+
 .main-title {
     text-transform: uppercase;
     text-align: center;
@@ -676,6 +680,24 @@ html {
 }
 
 
+@media (min-width: 768px) and (max-width: 1200px) {
+    .header-container {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    
+    .menu-list  {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+        padding-left: 150px;
+    }
+
+}
+
+
 @media (min-width: 768px) {
     html {
         font-size: 62.5%;
@@ -686,11 +708,24 @@ html {
     html {
         font-size: 51%;
     }
-}
-/* 
-@media (max-width: 360px) {
 
+    .header-container {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .menu-list  {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+        padding-left: 150px;
+    }
 }
+
+
+
 
 @media (max-width: 640px) and (orientation: portrait) {
     .trend-item {
@@ -702,4 +737,5 @@ html {
     .trend-item {
         width: 50%;
     }
-} */
+}
+

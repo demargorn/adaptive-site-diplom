@@ -633,7 +633,7 @@ html {
     list-style-type: none;
     width: 100%;
     max-width: 1170px;
-    height: 86px;
+    height: 90px;
     background-color: #f4f7f6;
     margin-bottom: 73px;
     margin-left: auto;
@@ -675,7 +675,7 @@ html {
 }
 
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 641px) and (max-width: 1200px) {
     .header {
         background-image: url('/img/banner-bg-tablet.jpg');
         background-position: bottom left;
@@ -756,11 +756,190 @@ html {
         margin-right: 45px;
         margin-left: 10px;
     }
-
-    /* .shop-item-text {
-        width: 120%;
-    } */
 }
+
+@media (max-width: 640px) {
+    .header {
+        height: 100vh;
+        background-image: url('/img/banner-mobile.jpg');
+        background-position: bottom right;
+    }
+
+    .header-container {
+        display: block;
+        position: relative;
+        margin: 0 15px;
+    }
+
+    .header-container img {
+        padding-top: 210px;
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 15px;
+    }
+
+    .main-title {
+        padding-top: 45px;
+    }
+
+    .trend-items {
+        display: block;
+    }
+
+    .trend-item {
+        position: relative;
+        height: 230px;
+        margin-bottom: 5px;
+    }
+
+    .trend-item:last-child {
+        margin-bottom: 50px;
+    }
+
+    .trend-item-text {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        width: calc(100% - 30px);
+        box-sizing: border-box;
+    }
+
+    .posts-content {
+        display: block;
+        margin-top: 0;
+        padding: 0px 15px;
+        margin: 0 auto;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .post {
+        display: block;
+        border-bottom: 2px solid #bbbbbb;
+        margin-bottom: 30px;
+    }
+
+    .post img {
+        display: block;
+        width: 100%;
+        padding-bottom: 15px;
+        margin: 0;
+    }
+
+    .post-content {
+        padding: 0px 15px;
+    }
+
+    .post-title a, .post-date-author {
+        padding-bottom: 30px;
+    }
+
+    .right-bar {
+        width: 100%;
+        max-width: 100%;
+        padding: 0px 15px;
+        margin: 0 auto;
+    }
+
+    .aside-title-text {
+        font-size: 2rem;
+        line-height: 3.75rem;
+        max-width: none;
+    }
+
+    .aside-title-text::after {
+        left: 44%;
+    }
+
+    .new-post {
+        width: 100%;
+        max-width: none;
+    }
+
+    .new-post-text {
+        display: block;
+        width: 100%;
+    }
+
+    .new-post-date {
+        font-size: 1.5rem;
+        padding-bottom: 5px;
+    }
+    .new-post-title {
+        width: inherit;
+    }
+
+    .new-post-title a {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+
+    .search-form label, .search-input-field, .email-input-field, .email-button, .tags-container  {
+        width: 100%;
+    }
+
+    .search-input-field, .email-input-field {
+        font-size: 1.6rem;
+        line-height: 5rem;
+    }
+
+    .email-button {
+        font-size: 1.75rem;
+        line-height: 5rem;
+    }
+
+    .tags-container-item a {
+        font-size: 1.5rem;
+    }
+
+    .themes-list-item:last-child {
+        margin-bottom: 45px;
+    }
+
+    .themes-list-item a {
+        font-size: 1.75rem;
+        line-height: 5.8rem;
+    }
+
+    .shop {
+        padding: 0 15px;
+    }
+
+    .shop-items {
+        display: block;
+    }
+
+    .shop-item {
+        width: 100%;
+    }
+
+    .shop-item-text {
+        height: 220px;
+    }
+
+    .footer {
+        padding: 0px 15px;
+    }
+
+    .footer-container {
+    margin-bottom: 55px;
+    max-width: none;
+}
+}   
+
+
+
+
 
 
         
@@ -773,20 +952,6 @@ html {
 @media (max-width: 767px) {
     html {
         font-size: 51%;
-    }
-
-    .header-container {
-        padding-left: 45px;
-        padding-right: 45px;
-    }
-
-    .menu-list  {
-        display: none;
-    }
-
-    .burger-menu {
-        display: block;
-        padding-left: 150px;
     }
 }
 

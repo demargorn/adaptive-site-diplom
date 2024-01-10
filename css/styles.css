@@ -15,6 +15,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
 }
 
 html {
@@ -270,11 +271,11 @@ html {
     background-color: #b59f5b;
 }
 
-.trend-items {
+.trends-items {
     display: flex;
 }
 
-.trend-item {
+.trends-item {
     background-size: cover;
     position: relative;
     width: 25%;
@@ -282,7 +283,7 @@ html {
     margin-right: 5px;
 }
 
-.trend-item::before {
+.trends-item::before {
     content: '';
     display: block;
     width: 100%;
@@ -296,7 +297,7 @@ html {
     z-index: 1;
 }
 
-.trend-item:last-child {
+.trends-item:last-child {
     margin-right: 0px;
 }
 
@@ -316,7 +317,7 @@ html {
     background-image: url('/img/trend4.jpg');
 }
 
-.trend-item-text {
+.trends-item-text {
     position: relative;
     width: 80%;
     border: 2px solid #b59f5b;
@@ -325,7 +326,7 @@ html {
     z-index: 2;
 }
 
-.trend-title a {
+.trends-title a {
     display: block;
     font-size: 2rem;
     line-height: 2.4rem;
@@ -335,7 +336,7 @@ html {
     text-transform: uppercase;
 }
 
-.trend-title a:hover {
+.trends-title a:hover {
     color: #b59f5b;
 }
 

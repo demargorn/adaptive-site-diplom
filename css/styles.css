@@ -151,7 +151,7 @@ html {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	border: none;
-	background: #f3f2f2 url("/svg/form-arrows.svg") no-repeat right 10px center;
+	background: #f3f2f2 url('/svg/form-arrows.svg') no-repeat right 10px center;
 	background-size: 8px;
 }
 
@@ -180,7 +180,7 @@ html {
 	width: 15px;
 	height: 15px;
 	margin-right: 3px;
-	background: url("/svg/form-empty-circle.svg") no-repeat center center;
+	background: url('/svg/form-empty-circle.svg') no-repeat center center;
 	background-size: 100%;
 }
 
@@ -192,7 +192,7 @@ html {
 }
 
 .radio:checked ~ .radio-group-text::before {
-	background-image: url("/svg/form-circle.svg");
+	background-image: url('/svg/form-circle.svg');
 }
 
 .form-textarea {
@@ -216,7 +216,7 @@ html {
 	width: 100%;
 	padding: 15px;
 	font-size: inherit;
-	font-weight: bold;
+	font-weight: 700;
 	color: white;
 	text-transform: uppercase;
 	background-color: #b59f5b;
@@ -648,7 +648,7 @@ html {
 
 .shop-items {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     max-width: 1170px;
     margin-left: auto;
@@ -665,15 +665,6 @@ html {
     padding-right: 0;
 }
 
-.shop-item-text {
-    height: 265px;
-    border: 2px solid #b59f5b;
-    padding: 50px 15px;
-    position: relative;
-    box-sizing: border-box;
-    top: -30px;
-}
-
 .shop-item img {
     display: block;
     max-width: 100%;
@@ -681,7 +672,16 @@ html {
     margin-right: auto;
 }
 
-.shop-item-text_title {
+.shop-item-text {
+    height: 265px;
+    border: 2px solid #b59f5b;
+    padding: 50px 15px;
+    position: relative;
+    box-sizing: border-box;
+    top: -30px; 
+}
+
+.shop-item-text-title {
     font-size: 2rem;
     line-height: 2.4rem;
     font-weight: 700;

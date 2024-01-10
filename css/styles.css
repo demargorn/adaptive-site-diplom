@@ -273,12 +273,17 @@ html {
 
 .trends-items {
     display: flex;
+	flex-wrap: wrap;
 }
 
 .trends-item {
+    display: flex;
+	align-items: flex-end;
+    flex-grow: 1;
+
     background-size: cover;
     position: relative;
-    width: 25%;
+    width: calc(25% - 5px);
     height: 320px;
     margin-right: 5px;
 }
@@ -298,7 +303,7 @@ html {
 }
 
 .trends-item:last-child {
-    margin-right: 0px;
+	margin-right: 0;
 }
 
 .item_1 {
@@ -805,15 +810,15 @@ html {
         padding: 10px;
     }
 
-    .trend-items {
+    .trends-items {
         flex-wrap: wrap;
     }
 
-    .trend-item {
+    .trends-item {
         width: calc(50% - 5px);
         
     }
-    .trend-item:nth-child(even) {
+    .trends-item:nth-child(even) {
         margin-bottom: 5px;
         margin-right: 0;
     }
@@ -900,21 +905,21 @@ html {
         padding-top: 45px;
     }
 
-    .trend-items {
+    .trends-items {
         display: block;
     }
 
-    .trend-item {
+    .trends-item {
         position: relative;
         height: 230px;
         margin-bottom: 5px;
     }
 
-    .trend-item:last-child {
+    .trends-item:last-child {
         margin-bottom: 50px;
     }
 
-    .trend-item-text {
+    .trends-item-text {
         position: absolute;
         bottom: 15px;
         left: 15px;
@@ -1059,14 +1064,14 @@ html {
 
 
 @media screen and (max-width: 640px) and (orientation: portrait) {
-    .trend-item {
+    .trends-item {
             width: 100%;
     }
 }
 
 
 @media screen and (max-width: 640px) and (orientation: landscape) {
-    .trend-item {
+    .trends-item {
         width: 50%;
     }
 }

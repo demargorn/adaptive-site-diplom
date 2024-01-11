@@ -506,9 +506,9 @@ html {
     color: #bdc0bf;
 }
 
-.search-input-field:focus {
-    border: 1px solid #b59f5b;
-    outline: none;
+.search-input-field:focus, .search-input-field:hover{
+    outline: 1px solid #b59f5b;
+	outline-offset: -1px;
 }
 
 .visually-hidden {
@@ -559,9 +559,9 @@ html {
     color: #bdc0bf;
 }
 
-.email-input-field:focus {
-    border: 1px solid #b59f5b;
-    outline: none;
+.email-input-field:focus, .email-input-field:hover {
+    outline: 1px solid #b59f5b;
+	outline-offset: -1px;
 }
 
 .email-button:hover {

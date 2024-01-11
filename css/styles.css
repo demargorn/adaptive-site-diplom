@@ -107,10 +107,8 @@ html {
     font-size: 4.5rem;
     line-height: 7.5rem;
     color: white;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 115px;
-    padding-bottom: 115px;
+    margin: 0 auto;
+    padding: 115px 0;
 }
 
 .popup {
@@ -135,7 +133,7 @@ html {
 }
 
 .feedback {
-	font-size: 12px;
+	font-size: 1.2rem;
 }
 
 .form-row {
@@ -214,14 +212,15 @@ html {
 }
 
 .send-button {
-	width: 100%;
-	padding: 15px;
-	font-size: inherit;
-	font-weight: 700;
-	color: white;
-	text-transform: uppercase;
-	background-color: #b59f5b;
-	border: none;
+    width: 100%;
+    height: 50px;
+    background-color: #b59f5b;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    cursor: pointer;
 }
 
 .send-button:focus, .send-button:hover {
@@ -280,7 +279,6 @@ html {
     display: flex;
 	align-items: flex-end;
     flex-grow: 1;
-
     background-size: cover;
     position: relative;
     width: calc(25% - 5px);
@@ -494,7 +492,7 @@ html {
 }
 
 .search-input-field {
-    width: 220px;
+    width: 100%;
     height: 50px;
     padding: 15px;
     font-size: 1.3rem;
@@ -544,7 +542,7 @@ html {
 }
 
 .email-input-field {
-    width: 270px;
+    width: 100%;
     height: 50px;
     padding: 15px;
     font-size: 1.3rem;
@@ -564,21 +562,6 @@ html {
 .email-input-field:focus {
     border: 1px solid #b59f5b;
     outline: none;
-}
-
-.email-button {
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-    width: 270px;
-    height: 50px;
-    background-color: #b59f5b;
-    font-size: 1.4rem;
-    line-height: 2.9rem;
-    font-weight: 700;
-    border: none;
-    color: white;
-    cursor: pointer;
 }
 
 .email-button:hover {
@@ -658,7 +641,7 @@ html {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -711,7 +694,7 @@ html {
 .shop-item-footer {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     padding-top: 20px;
 }
 
@@ -748,7 +731,7 @@ html {
     align-items: center;
     list-style-type: none;
     width: 100%;
-    max-width: 1170px;
+    max-width: 1200px;
     height: 90px;
     background-color: #f4f7f6;
     margin-bottom: 73px;

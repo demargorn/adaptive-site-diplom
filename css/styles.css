@@ -178,6 +178,7 @@ html {
 	border: none;
 	background: #f3f2f2 url('/svg/form-arrows.svg') no-repeat right 10px center;
 	background-size: 8px;
+    cursor: pointer;
 }
 
 .question-select:focus, .question-select:hover {
@@ -252,7 +253,7 @@ html {
 
 .send-button:focus, .send-button:hover {
 	outline: 2px solid #b59f5b;
-	outline-offset: 4px;
+	outline-offset: 2px;
 	color: black;
 }
 
@@ -739,6 +740,12 @@ html {
     border: none;
     color: white;
     text-transform: uppercase;
+}
+
+.in-shop:hover, .in-shop:focus {
+    outline: 2px solid #b59f5b;
+	outline-offset: 2px;
+	color: black;
 }
 
 .footer-container {

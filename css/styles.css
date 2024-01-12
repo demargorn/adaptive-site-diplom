@@ -135,6 +135,33 @@ html {
 	font-size: 1.2rem;
 }
 
+.title-text {
+    display: block;
+    text-align: center;
+    position: relative;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 27px;
+}
+
+.title-text::after {
+    content: '';
+    display: flex;
+    width: 66px;
+    height: 3px;
+    position: absolute;
+    left: calc(50% - 33px);
+    background-color: #b59f5b;
+    opacity: 0.7;
+}
+
+.feedback-title {
+    font-size: 2rem;
+    line-height: 4rem;
+}
+
 .form-row {
 	margin-bottom: 20px;
 }
@@ -249,25 +276,9 @@ html {
     position: relative;
 }
 
-.title-text {
-    display: block;
-    text-align: center;
-    position: relative;
+.trends-main-title {
     font-size: 2rem;
     line-height: 4rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding-bottom: 27px;
-}
-
-.title-text::after {
-    content: '';
-    display: flex;
-    width: 66px;
-    height: 3px;
-    position: absolute;
-    left: calc(50% - 33px);
-    background-color: #b59f5b;
 }
 
 .trends-items {
@@ -488,7 +499,6 @@ html {
 }
 
 .search-form label {
-    display: flex;
     flex-grow: 1;
 }
 
@@ -635,6 +645,11 @@ html {
 
 .shop {  
     padding-bottom: 70px;
+}
+
+.shop-title {
+    font-size: 2rem;
+    line-height: 4rem;
 }
 
 .shop-items {

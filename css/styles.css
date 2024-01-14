@@ -20,7 +20,7 @@
 }
 
 html {
-    font-family: OpenSans, Arial, Helvetica, sans-serif;
+    font-family: OpenSans, Arial, sans-serif;
     font-weight: 400;
 }
 
@@ -279,6 +279,7 @@ html {
 .trends-items {
     display: flex;
 	flex-wrap: wrap;
+    margin-bottom: 65px;
 }
 
 .trends-item {
@@ -352,7 +353,6 @@ html {
 .posts-content {
     display: flex;
     justify-content: center;
-    margin-top: 65px;
 }
 
 .main-content {
@@ -544,7 +544,9 @@ html {
     outline: none;
 }
 
-
+.subscribe {
+    margin-bottom: 60px;
+}
 
 .email-input-field {
     width: 100%;
@@ -575,7 +577,7 @@ html {
 }
 
 .tags {
-    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .tags-container {
@@ -603,10 +605,6 @@ html {
 
 .tags-container-item:hover {
     border: 3px solid #b59f5b;
-}
-
-.themes {
-    margin-top: 60px;
 }
 
 .themes-list {
@@ -845,8 +843,7 @@ html {
 
     .right-bar {
         width: 40%;
-        padding-left: 60px;
-        padding-right: 45px;
+        padding: 0px 45px 0px 60px;
     }
 
     .shop-items {
@@ -857,17 +854,14 @@ html {
 
     .shop-item {
         width: calc(50% - 55px);
-		margin-bottom: 25px;
     }  
     
     .shop-item:nth-child(odd) {
-        margin-left: 45px;
-        margin-right: 10px;
+        margin: 0px 10px 25px 45px;
     }
 
     .shop-item:nth-child(even) {
-        margin-right: 45px;
-        margin-left: 10px;
+        margin: 0px 45px 25px 10px;
     }
 }
 

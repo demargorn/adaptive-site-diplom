@@ -110,6 +110,9 @@ html {
 }
 
 .popup {
+    display: flex;
+	justify-content: center;
+	align-items: center;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -117,9 +120,6 @@ html {
 	left: 0;
 	background-color:rgba(0, 0, 0, 0.7);
 	z-index: 100;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .popup-container {
@@ -170,7 +170,7 @@ html {
 	width: 100%;
 	margin-top: 10px;
 	padding: 13px 10px;
-	font-size: inherit;
+	font-size: 1.3rem;
 	color: grey;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -500,7 +500,6 @@ html {
     height: 50px;
     padding: 0px 15px;
     font-size: 1.3rem;
-    line-height: 4rem;
     background-color: #f4f7f6;
     box-sizing: border-box;
     border: 1px solid #f4f7f6;
@@ -553,7 +552,6 @@ html {
     height: 50px;
     padding: 15px;
     font-size: 1.3rem;
-    line-height: 4rem;
     background-color: #f4f7f6;
     margin-bottom: 20px;
     -webkit-appearance: none;

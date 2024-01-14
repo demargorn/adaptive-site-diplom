@@ -1,15 +1,17 @@
 @font-face {
     font-family: OpenSans;
-    src: url('/fonts/OpenSans-Regular.woff');
+    src: url('../fonts/OpenSans-Regular.woff');
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: OpenSans;
-    src: url('/fonts/OpenSans-Bold.woff');
+    src: url('../fonts/OpenSans-Bold.woff');
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
 }
 
 * {
@@ -18,21 +20,18 @@
 }
 
 html {
-    font-family: OpenSans;
+    font-family: OpenSans, Arial, Helvetica, sans-serif;
     font-weight: 400;
 }
 
-.body {
-    position: relative;
-}
-
 .header {
-    background-image: url('/img/banner-bg.jpg');
+    background-image: url('../img/banner-bg.jpg');
     background-color: #888888;
     background-size: cover;
     background-position: center center;
     position: relative;
     width: 100%;
+    margin-bottom: 60px;
 }
 
 .header::before {
@@ -51,9 +50,9 @@ html {
 
 .header-container {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     box-sizing: border-box;
     position: relative;
     max-width: 1200px;
@@ -64,9 +63,9 @@ html {
 }
 
 .header-container img {
-    cursor: pointer;
     min-width: 200px;
     min-height: 50px;
+    cursor: pointer;
 }
 
 .menu-list {
@@ -136,12 +135,12 @@ html {
 }
 
 .title-text {
-    display: block;
-    text-align: center;
+    display: block; 
     position: relative;
     font-size: 1.4rem;
     line-height: 3rem;
     font-weight: 700;
+    text-align: center;
     text-transform: uppercase;
     padding-bottom: 27px;
 }
@@ -176,7 +175,7 @@ html {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	border: none;
-	background: #f3f2f2 url('/svg/form-arrows.svg') no-repeat right 10px center;
+	background: #f3f2f2 url('../svg/form-arrows.svg') no-repeat right 10px center;
 	background-size: 8px;
     cursor: pointer;
 }
@@ -200,13 +199,13 @@ html {
 }
 
 .radio-group-text::before {
-	content: "";
+	content: '';
 	display: inline-block;
 	vertical-align: middle;
 	width: 15px;
 	height: 15px;
 	margin-right: 3px;
-	background: url('/svg/form-empty-circle.svg') no-repeat center center;
+	background: url('../svg/form-empty-circle.svg') no-repeat center center;
 	background-size: 100%;
 }
 
@@ -218,7 +217,7 @@ html {
 }
 
 .radio:checked ~ .radio-group-text::before {
-	background-image: url('/svg/form-circle.svg');
+	background-image: url('../svg/form-circle.svg');
 }
 
 .form-textarea {
@@ -269,13 +268,7 @@ html {
 }
 
 .page {
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.trends {
-    position: relative;
+    margin: 0 auto;
 }
 
 .trends-main-title {
@@ -295,7 +288,7 @@ html {
     background-size: cover;
     position: relative;
     width: calc(25% - 5px);
-    height: 320px;
+    height: 380px;
     margin-right: 5px;
 }
 
@@ -318,19 +311,19 @@ html {
 }
 
 .item_1 {
-    background-image: url('/img/trend1.jpg');
+    background-image: url('../img/trend1.jpg');
 }
 
 .item_2 {
-    background-image: url('/img/trend2.jpg');
+    background-image: url('../img/trend2.jpg');
 }
 
 .item_3 {
-    background-image: url('/img/trend3.jpg');
+    background-image: url('../img/trend3.jpg');
 }
 
 .item_4 {
-    background-image: url('/img/trend4.jpg');
+    background-image: url('../img/trend4.jpg');
 }
 
 .trends-item-text {
@@ -443,17 +436,16 @@ html {
 
 .right-bar {
     width: 30%;
-    max-width: 270px;
-    margin-top: -1rem;
-    padding-left: 12rem;
-    padding-right: 1.5rem;
+    max-width: 280px;
+    margin-top: -5px;
+    padding-left: 120px;
+    padding-right: 15px;
 }
 
 .new-post {
     display: flex;
-    max-width: 270px;
     justify-content: flex-start;
-    padding-bottom: 2rem;
+    padding-bottom: 20px;
 }
 
 .new-post:last-child {
@@ -481,7 +473,6 @@ html {
     font-size: 1.4rem;
     line-height: 1.8rem;
     font-weight: 700;
-    width: 190px;
     text-transform: uppercase;
 }
 
@@ -538,7 +529,7 @@ html {
 .search-button {
     display: block;
     background-color: #b59f5b;
-    background-image: url('/svg/search.svg');
+    background-image: url('../svg/search.svg');
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: center;
@@ -552,6 +543,8 @@ html {
     background-color: #323232;
     outline: none;
 }
+
+
 
 .email-input-field {
     width: 100%;
@@ -586,7 +579,6 @@ html {
 }
 
 .tags-container {
-    width: 270px;
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
@@ -622,8 +614,7 @@ html {
 }
 
 .themes-list-item {
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding: 20px 0px;
     border-bottom: 1px solid #eeeeee;
 }
 
@@ -641,8 +632,8 @@ html {
 .themes-list-item-number {
     vertical-align: super;
     font-size: 1.3rem;
-    color: #b59f5b;
     font-weight: 700;
+    color: #b59f5b;
 }
 
 .shop {  
@@ -694,17 +685,17 @@ html {
     font-weight: 700;
 }
 
-.shop-item-text p {
+.shop-item-text span {
     font-size: 1.5rem;
     line-height: 2.2rem;
 }
 
-.shop-item-text p a {
+.shop-item-text span a {
     text-decoration: none;
     color:#b59f5b;
 }
 
-.shop-item-text p a:hover {
+.shop-item-text span a:hover {
     text-decoration: underline;
 }
 
@@ -771,15 +762,15 @@ html {
 }
 
 .dribbble-logo {
-    background-image: url('/svg/001-dribbble.svg');
+    background-image: url('../svg/001-dribbble.svg');
 }
 
 .pinterest-logo {
-    background-image: url('/svg/002-pinterest.svg');
+    background-image: url('../svg/002-pinterest.svg');
 }
 
 .tumblr-logo {
-    background-image: url('/svg/003-tumblr.svg');
+    background-image: url('../svg/003-tumblr.svg');
 }
 
 .copyright {
@@ -800,7 +791,7 @@ html {
 
 @media screen and (min-width: 641px) and (max-width: 1199px) {
     .header {
-        background-image: url('/img/banner-bg-tablet.jpg');
+        background-image: url('../img/banner-bg-tablet.jpg');
         background-position: bottom left;
     }
 
@@ -831,8 +822,7 @@ html {
     }
 
     .main-content {
-        width: 50%;
-        margin: 0;
+        width: 60%;
         padding-left: 45px;
     }
 
@@ -884,7 +874,7 @@ html {
 @media screen and (max-width: 640px) {
     .header {
         height: 100vh;
-        background-image: url('/img/banner-mobile.jpg');
+        background-image: url('../img/banner-mobile.jpg');
         background-position: bottom right;
     }
 

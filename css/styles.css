@@ -24,10 +24,6 @@ html {
     font-weight: 400;
 }
 
-/* body {
-    box-sizing: border-box;
-} */
-
 .header {
     background-image: url('../img/banner-bg.jpg');
     background-color: #888888;
@@ -838,7 +834,6 @@ html {
     .post img {
         padding: 0 0 50px 0;
         width: 150%;
-        
     }
 
     .right-bar {
@@ -869,8 +864,23 @@ html {
     }
 }
 
-@media screen and (max-width: 640px) {
-    
+
+@media screen and ((min-width: 641px) and (max-width: 1199px)) and (orientation: landscape) {
+    .trends-items {
+        flex-wrap: nowrap;
+    }
+
+    .trends-item:nth-child(even) {
+        margin-right: 5px;
+    }
+
+    .trends-item:last-child {
+        margin-right: 0px;
+    }
+} 
+
+
+@media screen and (max-width: 640px) {   
     .header {
         height: 100vh;
         background-image: url('../img/banner-mobile.jpg');
@@ -1055,6 +1065,37 @@ html {
 }   
 
 
+@media screen and (max-width: 640px) and (orientation: portrait) {
+    .trends-item {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 640px) and (orientation: landscape) {
+    .header {
+        height: 100vh;
+    }
+
+    .header-container img {
+        margin: 10% 15px 0px 15px;
+    }
+
+    .trends-items {
+        display: flex;
+    }
+
+    .trends-item {
+        width: calc(50% - 5px);
+        margin-right: 5px;
+    }
+
+    .trends-item:nth-child(even) {
+        margin-right: 0px;
+    }
+}
+
+
 @media screen and (min-width: 768px) {
     html {
         font-size: 62.5%;
@@ -1065,19 +1106,5 @@ html {
 @media screen and (max-width: 767px) {
     html {
         font-size: 51%;
-    }
-}
-
-
-@media screen and (max-width: 640px) and (orientation: portrait) {
-    .trends-item {
-            width: 100%;
-    }
-}
-
-
-@media screen and (max-width: 640px) and (orientation: landscape) {
-    .trends-item {
-        width: 50%;
     }
 }

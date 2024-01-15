@@ -799,13 +799,17 @@ html {
         padding: 10px 45px;
     }
     
+    .popup-container {
+		width: 50%;
+	}
+	
     .menu-list  {
         display: none;
     }
 
     .burger-menu {
         display: block;
-        margin-left: 150px;
+        margin-left: 195px;
     }
 
     .trends-items {
@@ -889,6 +893,10 @@ html {
         padding-top: 210px;
     }
 
+    .popup-container {
+		width: 80%;
+	}
+	
     .menu-list {
         display: none;
     }
@@ -1036,7 +1044,6 @@ html {
 
     .footer {
         margin: 0px 15px;
-        /* padding: 0px 15px; */
     }
 
     .footer-container {

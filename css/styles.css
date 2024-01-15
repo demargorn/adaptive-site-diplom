@@ -24,6 +24,10 @@ html {
     font-weight: 400;
 }
 
+/* body {
+    box-sizing: border-box;
+} */
+
 .header {
     background-image: url('../img/banner-bg.jpg');
     background-color: #888888;
@@ -861,9 +865,14 @@ html {
     .shop-item:nth-child(even) {
         margin: 0px 45px 25px 10px;
     }
+
+    .footer {
+        margin: 0px 45px;
+    }
 }
 
 @media screen and (max-width: 640px) {
+    
     .header {
         height: 100vh;
         background-image: url('../img/banner-mobile.jpg');
@@ -937,7 +946,7 @@ html {
     .post img {
         display: block;
         width: 100%;
-        padding-bottom: 15px;
+        padding: 0px 0px 15px 0px;
         margin: 0;
     }
 
@@ -952,7 +961,7 @@ html {
     .right-bar {
         width: 100%;
         max-width: 100%;
-        padding: 0px 15px;
+        padding: 0px;
         margin: 0 auto;
     }
 
@@ -1026,7 +1035,8 @@ html {
     }
 
     .footer {
-        padding: 0px 15px;
+        margin: 0px 15px;
+        /* padding: 0px 15px; */
     }
 
     .footer-container {

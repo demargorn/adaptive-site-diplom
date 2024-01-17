@@ -175,7 +175,7 @@ html {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	border: none;
-	background: #f3f2f2 url('../svg/form-arrows.svg') no-repeat right 10px center;
+	background: #f4f7f6 url('../svg/form-arrows.svg') no-repeat right 10px center;
 	background-size: 8px;
     cursor: pointer;
 }
@@ -228,7 +228,7 @@ html {
 	margin-top: 10px;
 	font: inherit;
 	color: grey;
-	background-color: #f3f2f2;
+	background-color: #f4f7f6;
     box-sizing: border-box;
 	border: none;
 }
@@ -900,7 +900,7 @@ html {
     }
 
     .popup-container {
-		width: 80%;
+		width: 90%;
 	}
 	
     .menu-list {
@@ -967,6 +967,7 @@ html {
     .post img {
         display: block;
         width: 100%;
+        min-width: inherit;
         padding: 0px 0px 15px 0px;
         margin: 0;
     }

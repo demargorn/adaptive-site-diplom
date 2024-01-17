@@ -900,7 +900,7 @@ html {
     }
 
     .popup-container {
-		width: 90%;
+		width: 80%;
 	}
 	
     .menu-list {
@@ -911,7 +911,7 @@ html {
         display: block;
         position: absolute;
         top: 30px;
-        right: 15px;
+        right: 0px;
     }
 
     .main-title {

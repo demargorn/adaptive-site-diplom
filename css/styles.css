@@ -528,6 +528,7 @@ html {
     padding: 0px 15px;
     font-size: 1.3rem;
     background-color: #f4f7f6;
+    caret-color: #b59f5b;
     box-sizing: border-box;
     border: 1px solid #f4f7f6;
 }
@@ -584,6 +585,7 @@ html {
     margin-bottom: 20px;
     -webkit-appearance: none;
 	-moz-appearance: none;
+    caret-color: #b59f5b;
     box-sizing: border-box;
     border: 1px solid #f4f7f6;
 }
